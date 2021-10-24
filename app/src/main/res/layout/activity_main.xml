@@ -5,5 +5,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+   <ImageView
+       android:id="@+id/logo"
+       android:layout_width="94dp"
+       android:layout_height="87dp"
+       android:layout_marginLeft="8dp"
+       android:layout_marginStart="8dp"
+       android:layout_marginTop="16dp"
+       android:src="@drawable/numbers"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
 
-   </androidx.constraintlayout.widget.ConstraintLayout>
+   <TextView
+       android:id="@+id/name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginEnd="16dp"
+       android:layout_marginRight="16dp"
+       android:layout_marginTop="16dp"
+       android:text="Number App"
+       android:textColor="@color/black"
+       android:textSize="34sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <EditText
+       android:id="@+id/number"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="44dp"
+       android:ems="10"
+       android:inputType="number"
+       app:layout_constraintBottom_toTopOf="@+id/button"
+       app:layout_constraintEnd_toEndOf="@+id/msg"
+       app:layout_constraintHorizontal_bias="0.488"
+       app:layout_constraintStart_toStartOf="@+id/msg" />
+
+   <TextView
+       android:id="@+id/msg"
+       android:layout_width="wrap_content"
+       android:layout_height="27dp"
+       android:layout_marginBottom="24dp"
+       android:text="Enter Number"
+       android:textColor="@color/black"
+       android:textSize="20dp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toTopOf="@+id/number"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.501"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+   <Button
+       android:id="@+id/button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="44dp"
+       android:text="Enter"
+       android:padding="5dp"
+       app:backgroundTint="#2196F3"
+       app:layout_constraintBottom_toTopOf="@+id/digit"
+       app:layout_constraintEnd_toEndOf="@+id/number"
+       app:layout_constraintHorizontal_bias="0.491"
+       app:layout_constraintStart_toStartOf="@+id/number" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

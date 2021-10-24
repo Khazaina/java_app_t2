@@ -10,6 +10,14 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    int[] digit={1,2,3,4,5,6,7,8,9};
+    String[] a={"One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
+    String[] sentence={"I have one pen.","give me two cookies","I bought three jugs",
+            "I have four pens.","give me five cookies","I bought six jugs",
+            "I have seven pens.","give me eight cookies","I bought nine jugs"};
+    EditText number;
+    TextView Number,sen,dig;
+    Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
