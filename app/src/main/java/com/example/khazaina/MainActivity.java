@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+
 public class MainActivity extends AppCompatActivity {
 
     int[] digit={1,2,3,4,5,6,7,8,9};
@@ -27,8 +28,7 @@ public class MainActivity extends AppCompatActivity {
         sen=findViewById(R.id.sen);
         dig=findViewById(R.id.digit);
         btn=findViewById(R.id.button);
-        btn.setOnClickListener(new View.OnClickListener()
-        {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int t_num=Integer.parseInt(number.getText().toString());
