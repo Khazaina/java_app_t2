@@ -27,5 +27,21 @@ public class MainActivity extends AppCompatActivity {
         sen=findViewById(R.id.sen);
         dig=findViewById(R.id.digit);
         btn=findViewById(R.id.button);
+        btn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                int t_num=Integer.parseInt(number.getText().toString());
+                for(int i=0;i<digit.length;i++){
+                    if(t_num==digit[i]){
+                        Number.setText(String.valueOf(digit[i]));
+                        dig.setText(String.valueOf(digit[i]));
+                        sen.setText(sentence[i]);
+                    }
+                }
+            }
+        });
+
+
     }
 }
