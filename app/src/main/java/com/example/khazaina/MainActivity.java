@@ -22,5 +22,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        number=findViewById(R.id.number);
+        Number=findViewById(R.id.num);
+        sen=findViewById(R.id.sen);
+        dig=findViewById(R.id.digit);
+        btn=findViewById(R.id.button);
     }
 }
